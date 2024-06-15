@@ -145,7 +145,7 @@ const data = [
   // Ajout du bouton "Fais le don" et gestion de l'envoi du message WhatsApp
   document.getElementById("don-btn").addEventListener("click", function() {
       var selectedValue = data[picked].value;
-      var phoneNumber = "0151616169"; // Remplacez par le numéro WhatsApp souhaité
+      var phoneNumber = "+2250151616169"; // Remplacez par le numéro WhatsApp souhaité
       var message = "je fais don de " + selectedValue;
       var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
       window.open(whatsappUrl, "_blank");
