@@ -61,8 +61,8 @@ const data = [
       .text(function(d, i) {
           return data[i].label;
       })
-      .style("font-family", "Helvetica Neue, Helvetica, Arial, sans-serif")
-      .style("font-size", "12px");
+      .style("font-family", "Poppins, Helvetica, Arial, sans-serif")
+      .style("font-size", "3vw");
   
   container.on("click", spin);
   
@@ -132,7 +132,7 @@ const data = [
       .attr("x", 0)
       .attr("y", buttonRadius / 3)
       .attr("text-anchor", "middle")
-      .text("SPIN")
+      .text("JOUER")
       .style({ "font-weight": "bold", "font-size": buttonRadius / 2 + "px" });
   
   function rotTween() {
