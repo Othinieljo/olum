@@ -148,6 +148,8 @@ text {
         align-items: center; */
         /*
          margin: 0px 19px; */
+        margin: -20vw;
+
     }
     #depot img{
         margin-top: 6px;
