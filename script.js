@@ -23,7 +23,7 @@ const data = [
       oldpick = [],
       spins = 0, // Nombre de tours effectués
       maxSpins = 10, // Nombre maximum de tours autorisés
-      color = d3.scale.ordinal().range(["#2C3E50"]); // Bleu marine chic
+      color = d3.scale.ordinal().range(["#2C3E50", "#8E44AD", "#2980B9", "#16A085", "#F39C12", "#D35400", "#C0392B", "#7F8C8D", "#27AE60", "#E74C3C", "#3498DB", "#9B59B6"]); // Bleu marine chic
   
   var svg = d3.select('#chart')
       .append("svg")
@@ -107,6 +107,11 @@ const data = [
               d3.select("#question h1")
                   .text("Vous offrez : " + data[picked].value);
               oldrotation = rotation;
+              document.getElementById("dpt").style.display = "block";
+              document.getElementById("don-btn").style.display = "block";
+
+            // Scroller jusqu'à la section de dépôt
+            document.getElementById("dpt").scrollIntoView({ behavior: "smooth" });
   
               container.on("click", spin);
           });
@@ -145,8 +150,8 @@ const data = [
   // Ajout du bouton "Fais le don" et gestion de l'envoi du message WhatsApp
   document.getElementById("don-btn").addEventListener("click", function() {
       var selectedValue = data[picked].value;
-      var phoneNumber = "+2250789413618"; // Remplacez par le numéro WhatsApp souhaité
-      var message = "je fais don de " + selectedValue;
+      var phoneNumber = "+2250151616169"; // Remplacez par le numéro WhatsApp souhaité
+      var message = "Je fais don de " + selectedValue;
       var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
       window.open(whatsappUrl, "_blank");
   });

@@ -14,9 +14,23 @@
    
 }#container h3{
     text-align: center;
-    background-color: #2C3E50;
+    background-color: #f36523;
     margin-top: 30px;
+    padding: 1vw;
     /* margin: 5px; */
+
+}
+#instructions{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+ol{
+    list-style-type: decimal;
+}
+#instructions p{
+    font-weight: bold;
+    color: #f36523;
 
 }
 #start {
@@ -26,7 +40,9 @@ text {
     font-size: 11px;
     pointer-events: none;
 }
-
+#dpt{
+    display: none;
+}
 #chart {
     /* position: absolute; */
     width: 80vw;
@@ -67,15 +83,18 @@ text {
     /* transform: translateX(-50%); */
     padding: 1em 2em;
     font-size: 1.2em;
-    background-color: #2C3E50;
+    /* background-color: #2C3E50; */
+    background-color: #f36523;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: none;
 }
 
 #don-btn:hover {
-    background-color: #1A252F;
+    /* background-color: #1A252F; */
+    background-color: #f36523;
 }
 
 #depot {
@@ -104,7 +123,8 @@ text {
 #copy-btn {
     padding: 1em 1em;
     font-size: 1.2em;
-    background-color: #2C3E50;
+    /* background-color: #2C3E50; */
+    background-color: #f36523;
     color: white;
     border: none;
     border-radius: 5px;
@@ -124,6 +144,34 @@ text {
 
 #copy-btn:hover {
     background-color: #1A252F;
+}
+.animate-charcter
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -155,6 +203,12 @@ text {
         margin-top: 6px;
         width: 6vw;
         height:6vw;
+    }
+    #container h3{
+       
+        padding: 3vw;
+        /* margin: 5px; */
+    
     }
 }
 
