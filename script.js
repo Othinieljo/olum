@@ -155,4 +155,11 @@ const data = [
       var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
       window.open(whatsappUrl, "_blank");
   });
-  
+  document.getElementById("copy-btn").addEventListener("click", function() {
+    var phoneNumber = document.getElementById("phone-number").textContent;
+    navigator.clipboard.writeText(phoneNumber).then(function() {
+        // alert("Numéro copié : " + phoneNumber);
+    }, function() {
+        // alert("Erreur lors de la copie du numéro.");
+    });
+});
