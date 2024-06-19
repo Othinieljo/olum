@@ -117,12 +117,12 @@ const data = [
           });
   }
   
-  var arrowPadding = r - 10;
+  var arrowPadding = r - 20;
   
   svg.append("g")
       .attr("transform", "translate(" + (w / 2 + padding.left) + "," + ((h / 2) + padding.top) + ")")
       .append("path")
-      .attr("d", "M" + arrowPadding + ",0L" + (arrowPadding + 10) + ",10L" + (arrowPadding + 10) + ",-10Z")
+      .attr("d", "M" + arrowPadding + ",0L" + (arrowPadding + 20) + ",20L" + (arrowPadding + 20) + ",-20Z")
       .style({ "fill": "black" });
   
   var buttonRadius = Math.min(w, h) * 0.1;
@@ -163,3 +163,8 @@ const data = [
         // alert("Erreur lors de la copie du numéro.");
     });
 });
+document.getElementById("next").addEventListener("click", function(){
+    document.getElementById("chart").scrollIntoView({ behavior: "smooth" });
+    // console.log("gfgg");
+    // alert("Erreur lors de la copie du numéro.");
+  })
