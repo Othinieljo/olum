@@ -147,6 +147,13 @@ const data = [
       };
   }
   
+  document.getElementById("next").addEventListener("click", function(){
+    document.getElementById("chart").scrollIntoView({ behavior: "smooth" });
+    // console.log("gfgg");
+    // alert("Erreur lors de la copie du numéro.");
+    // console.log("ddd");
+    
+  })
   // Ajout du bouton "Fais le don" et gestion de l'envoi du message WhatsApp
   document.getElementById("don-btn").addEventListener("click", function() {
       var selectedValue = data[picked].value;
@@ -163,8 +170,8 @@ const data = [
         // alert("Erreur lors de la copie du numéro.");
     });
 });
-document.getElementById("next").addEventListener("click", function(){
-    document.getElementById("chart").scrollIntoView({ behavior: "smooth" });
-    // console.log("gfgg");
-    // alert("Erreur lors de la copie du numéro.");
-  })
+
+//   document.getElementById("next").addEventListener("touchend", function() {
+//     document.getElementById("chart").scrollIntoView({ behavior: "smooth" });
+//     console.log("ddd");
+// });

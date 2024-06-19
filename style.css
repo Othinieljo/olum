@@ -56,6 +56,8 @@ text {
     justify-content: center;
     align-items: center; */
     /* margin: 0px 19px; */
+    margin: 0px;
+    
 }
 
 #question {
@@ -108,6 +110,7 @@ text {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 4vw;
+    margin-bottom: 18vw;
     font-family: "Poppins", sans-serif;
 
 
