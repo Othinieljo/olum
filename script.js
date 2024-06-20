@@ -1,7 +1,7 @@
 const data = [
     { label: "Spag X1 ", value: "200F (Spaguetti)" },
     { label: "Savon X1 ", value: "200F (Savon X 1)" },
-    { label: "Huile X1 ", value: "200F (Huile X 1" },
+    { label: "Huile X1 ", value: "200F (Huile X 1)" },
     { label: "Riz ", value: "300F (Riz)" },
     { label: "Spag X2 ", value: "300F (Spaguetti)" },
     { label: "Combo 1", value: "1000F (Riz + huile + savon)" },
