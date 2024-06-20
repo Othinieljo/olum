@@ -478,8 +478,9 @@ dialog {
   transform: translate(-50%, -50%);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border: none;
-  width: 30vw;
+  max-width: 30vw;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.3);
@@ -546,10 +547,10 @@ form button{
       font-size: 1em;
     }
     dialog{
-      width: 80vw;
+      max-width: 80vw;
     }
     .model-body form input{
-      width: 50vw;
+      max-width: 50vw;
       
     }
     .model-body form h3{
