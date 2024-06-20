@@ -15,7 +15,7 @@
     
    
 }.container{
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   max-width: 100%;
   box-sizing: border-box;
 
