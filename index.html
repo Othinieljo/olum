@@ -18,7 +18,50 @@
         <header>
             
         </header>
-        <button> <a href="acceuil.html">Soutenir L'ÉVÉNEMENT</a></button>
+        <div class="btn">
+            <button > <a href="acceuil.html">Soutenir L'ÉVÉNEMENT en Jouant</a></button>
+            <button id="myBtn">Soutenir L'ÉVÉNEMENT</button>
+
+        </div>
+        <dialog class="modal" id="myModal">
+            <div class="model-header">
+                <h3>Soutenir L'ÉVÉNEMENT</h3>
+                <button class="close"><img src="./close.svg" alt=""></button>
+
+            </div>
+            <div class="model-body">
+                <form id="montantForm">
+                    <h3>MONTANT</h3>
+                    <input type="number" name="montant" id="montant" required placeholder="1000" pattern="^[1-9]\d*$"><span>FCFA</span>
+                    <button type="submit">Continuer</button>
+
+                </form>
+
+            </div>
+        </dialog>
+        <dialog class="modal" id="paymentModal">
+            <div class="model-header">
+                <h3>Confirmation de don</h3>
+                <button class="close"><img src="./close.svg" alt=""></button>
+
+            </div>
+            <div class="model-body">
+                <p>Vous devez payer <span id="montantConfirmation"></span> FCFA</p>
+                
+                <div id="dpt" class="show">
+                    <p>Fais le dépôt avant :</p>
+                    <div id="depot">
+                      <img src="wave.png" alt="Faites votre depot via Wave">
+                      <p id="phone-number">0151616169</p>
+                      <button id="copy-btn" style="font-size: 0.9em; font-family: Oswald;" >Copier le numéro</button>
+          
+                </div> 
+                <button id="don-btn" style="font-size: 0.9em; font-family: Oswald;">Fais le don</button>
+            </div>
+
+        </dialog>
+       
+        
 
         <!-- <div class="affiche">
             <img src="./affiche.jpeg" alt="Campagne d evangelisation">
@@ -28,14 +71,20 @@
             <p>EVANGELISATION</p>
             <p>PARTAGE DE DON</p>
         </div>
-        <p class="tee-s">Cliquez sur SOUTENIR L'ÉVÉNEMENT et tentez de gagner un tee-shirt Sentinelle</p>
+        <p class="tee-s">Cliquez sur SOUTENIR L'ÉVÉNEMENT EN JOUANT et tentez de gagner un tee-shirt Sentinelle</p>
         <div class="img">
+            <!-- <img src="tee-shirt.jpeg" alt="Sentinelle"> -->
             <img src="tee-shirt.jpeg" alt="Sentinelle">
         </div>
+        <!-- <div class="infos">
+            <h3>Qui sommes nous ?</h3>
+            <p></p>
+        </div> -->
         <!-- <footer>
             <p>Sentinelle</p>
         </footer> -->
     </div>
+    <script src="index.js"></script>
     
 </body>
 </html>

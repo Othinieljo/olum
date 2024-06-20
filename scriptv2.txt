@@ -72,20 +72,6 @@ arcs.append("text").attr("transform", function(d) {
         return data[i].label === "T-shirt" ? "highlighted-text" : "";
     });
 
-// Ajout de l'image SVG pour "T-shirt"
-arcs.append("svg:image")
-    .attr("xlink:href", function(d, i) {
-        return data[i].label === "T-shirt" ? "star2.svg" : "";
-    })
-    .attr("width",  20)
-    .attr("height", 20)
-    .attr("transform", function(d) {
-        d.innerRadius = 0;
-        d.outerRadius = r;
-        d.angle = (d.startAngle + d.endAngle) / 2;
-        return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -90) + ",-10)";
-    });
-
 container.on("click", spin);
 
 function spin(d) {

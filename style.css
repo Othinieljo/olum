@@ -100,6 +100,7 @@ text {
     justify-content: center;
     margin: auto;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 1vw;
 }
 #next{
     padding: 0.5em 1.2em;
@@ -303,18 +304,17 @@ header{
  button{
   text-transform: uppercase;
   padding: 1em 1em;
-    font-size: 1.2em;
-    /* background-color: #2C3E50; */
- 
-    background-color: #f36523;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    animation: ease all 3s;
-    color: #000;
+  font-size: 1em;
+  background-color: #f36523;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  animation: ease all 3s;
+  font-family: "Oswald", sans-serif;
+   
     
 }
 button a{
@@ -322,6 +322,7 @@ button a{
   text-decoration: none;
   color: #fff;
 }
+
 button:hover{
   background-color: #1A252F;
 }
@@ -329,22 +330,40 @@ button:hover{
   margin-top: 10px;
   background-color: #eeeeed;
   padding: 5px;
-  font-size: 2em;
+  font-size: 1.3em;
+  
 }
 #prog h3{
   margin-top: 20px;
   color:#f36523 ;
   text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
 }
+
 #prog p{
   background-color: #F5F3EA;
-  margin: 10px;
   text-align: center;
   padding: 0.6em;
+  font-family: "Oswald", sans-serif;
+  width: 40vw;
+  margin: 10px auto;
+}
+.btn  button a{
+  font-family: "Oswald", sans-serif;
 }
 .tee-s{
   margin-top: 5px;
   animation:new .5s linear infinite;
+  text-align: center;
+}
+.infos h3{
+  text-align: center;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
 }
 @keyframes new
 {
@@ -368,7 +387,7 @@ button:hover{
 }
 .img img{
   width: 80vw;
-  height: 20vh;
+  height: 30vh;
   display: block;
   margin: auto;
   
@@ -384,6 +403,81 @@ footer{
 footer p{
   text-align: center;
   font-style: italic;
+}
+.model{
+  display: flex;
+  margin: auto;
+}
+.model-header{
+  display: flex;
+  background-color: #eeeeed;
+  
+  
+}
+.model-header h3{
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  
+}
+.close{
+  
+  width: 3vw;
+  height: 1vh;
+  border-radius: 0;
+  /* padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%; */
+  border: none;
+ 
+  margin-right: 0px;
+   
+  
+}
+.close img{
+    width: 1vw;
+    height: 1vw;
+    position: relative;
+    top: -0.8vw;
+    
+    
+    
+}
+.model-body p{
+  text-align: center;
+}
+.model-body form{
+  margin-left: 3vw;
+
+}
+.model-body form input{
+  width: 20em;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+  outline: none;
+}
+.model-body form span{
+  color:  #ccc;
+  margin-left: 1em;
+}
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: none;
+  width: 30vw;
+  overflow-y: hidden;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
+form button{
+  margin-top: 1em;
+  padding: 0.5em 0.5em;
 }
 
 @media (max-width: 768px) {
@@ -441,6 +535,45 @@ footer p{
     }
     #prog{
       font-size: 1em;
+    }
+    dialog{
+      width: 80vw;
+    }
+    .model-body form input{
+      width: 50vw;
+      
+    }
+    .model-body form h3{
+      font-size: 0.7em;
+    }
+    .model-header h3{
+      font-size: 0.9em;
+      
+    }
+    .close{
+      width: 9vw;
+      height: 100%;
+      
+      
+      
+       
+      
+    }
+    .close img{
+        width: 3vw;
+        height: 3vw;
+        
+        
+        
+        
+    }
+    #prog p{
+      background-color: #F5F3EA;
+      text-align: center;
+      padding: 0.6em;
+      font-family: "Oswald", sans-serif;
+      width: 80vw;
+      
     }
 }
 
