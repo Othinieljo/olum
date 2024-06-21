@@ -140,6 +140,7 @@ text {
     text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 10px;
    
 }
@@ -152,7 +153,9 @@ text {
     font-size: 1.5em;
     font-weight: bold;
     margin: 10px 5px;
+    width: 40vw;
 }
+
 /* p{
     margin: 0px;
 } */
@@ -426,7 +429,6 @@ footer p{
   display: flex;
   background-color: #eeeeed;
   
-  
 }
 .model-header h3{
   text-transform: uppercase;
@@ -443,16 +445,16 @@ footer p{
   background: #eee;
   border-radius: 50%; */
   border: none;
- 
   margin-right: 0px;
+  overflow-y: hidden;
    
   
 }
 .close img{
     width: 1vw;
     height: 1vw;
-    position: relative;
-    top: -0.8vw;
+    display: flex;
+    justify-content: center;
     
     
     
@@ -486,6 +488,7 @@ dialog {
   max-width: 30vw;
   overflow-y: hidden;
   overflow-x: hidden;
+  
 }
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.3);
@@ -494,7 +497,44 @@ form button{
   margin-top: 1em;
   padding: 0.5em 0.5em;
 }
+@media (min-width: 800px)  and (min-height:1000px) {
+  dialog{
+    max-width: 70vw;
 
+  }
+  #phone-number{
+    
+    
+    margin: 0px 0px;
+    width: 20vw;
+  }
+  #copy-btn{
+    width: 30vw;
+  }
+  
+}
+@media (min-width:1500px) {
+  .close img{
+    position: relative;
+    top: -0.6vw;
+  }
+  #copy-btn{
+    width: 20vw;
+  }
+  
+}
+@media (max-width: 769px)  and (max-width>1280px) {
+  dialog{
+    max-width: 50vw;
+  }
+  #phone-number{
+    
+    
+    margin: 0px 0px;
+    width: 20vw;
+  }
+  
+}
 @media (max-width: 768px) {
     #don-btn, #copy-btn {
         font-size: 1em;
