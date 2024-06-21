@@ -33,34 +33,36 @@
             <div class="model-body">
                 <form id="montantForm">
                     <h3>MONTANT</h3>
-                    <input type="number" name="tel" id="montant" required placeholder="1000" pattern="^[1-9]\d*$" inputmode="numeric"><span>FCFA</span>
+                    <input type="number" name="tel" id="montant" required placeholder="1000" pattern="^(?!0$)(?!0\d)\d+$" inputmode="numeric"><span>FCFA</span>
                     <button type="submit">Continuer</button>
 
                 </form>
 
             </div>
         </dialog>
-        <dialog class="modal" id="paymentModal">
-            <div class="model-header">
-                <h3>Confirmation de don</h3>
-                <button class="close"><img src="./close.svg" alt=""></button>
+        <div id="modal">
+            <dialog class="modal" id="paymentModal">
+                <div class="model-header">
+                    <h3>Confirmation de don</h3>
+                    <button class="close"><img src="./close.svg" alt=""></button>
 
-            </div>
-            <div class="model-body">
-                <p>Vous devez payer <span id="montantConfirmation"></span> FCFA</p>
-                
-                <div id="dpt" class="show">
-                    <p>Fais le dépôt avant :</p>
-                    <div id="depot">
-                      <img src="wave.png" alt="Faites votre depot via Wave" >
-                      <p id="phone-number">0151616169</p>
-                      <button id="copy-btn" style="font-size: 0.9em; font-family: Oswald;" >Copier le numéro</button>
-          
-                </div> 
-                <button id="don-btn" style="font-size: 0.9em; font-family: Oswald;">Fais le don</button>
-            </div>
+                </div>
+                <div class="model-body">
+                    <p>Vous devez payer <span id="montantConfirmation"></span> FCFA</p>
+                    
+                    <div id="dpt" class="show">
+                        <p>Fais le dépôt avant :</p>
+                        <div id="depot">
+                        <img src="wave.png" alt="Faites votre depot via Wave" >
+                        <p id="phone-number">0151616169</p>
+                        <button id="copy-btn" style="font-size: 0.9em; font-family: Oswald;" >Copier le numéro</button>
+            
+                    </div> 
+                    <button id="don-btn" style="font-size: 0.9em; font-family: Oswald;">Fais le don</button>
+                </div>
 
-        </dialog>
+            </dialog>
+       </div>
        
         
 
